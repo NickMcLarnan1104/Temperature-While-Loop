@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="a0001r0212-sdt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-20 09:39:06 AM"/>
+        <attribute name="created" value="YTAwMDFyMDIxMi1zZHQ7QTAwMDFSMDIxMkMwMTA7MjAyMi0wNC0xOTswMToxMzoyMiBQTTsyOTk5"/>
+        <attribute name="edited" value="YTAwMDFyMDIxMi1zZHQ7QTAwMDFSMDIxMkMwMTA7MjAyMi0wNC0xOTswMTo1NTowNCBQTTsxOzMxMTM="/>
+        <attribute name="edited" value="T1dORVI7REVTS1RPUC1FMENQVjJDOzIwMjItMDQtMjA7MDk6Mzk6MDYgQU07MjsyODIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="PROGRAMMER: Nick McLarnan&#13;&#10;PROGRAM NAME: Assignment 11 - Creating Arrays/Lists&#13;&#10;DATE CREATED: 04/19/2022&#13;&#10;PURPOSE: A program to create a list of outdoor Temperature data."/>
+            <comment text="Declare variables"/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <declare name="days" type="Integer" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="state" type="String" array="False" size=""/>
+            <declare name="temp" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <comment text="Assign variables"/>
+            <assign variable="count" expression="1"/>
+            <assign variable="total" expression="0"/>
+            <output expression="&quot;Enter the name of the state you are recording the temperature for [i.e. Florida, Georgia, New York]&quot;" newline="True"/>
+            <input variable="state"/>
+            <output expression="&quot;How many days will you record the outdoor Temperature for the state of &quot; &amp; state &amp; &quot;?&quot;" newline="True"/>
+            <input variable="days"/>
+            <declare name="wTemp" type="Real" array="True" size="days + 1"/>
+            <while expression="count &lt;= days">
+                <output expression="&quot;What's the outdoor temperature in &quot; &amp; state &amp; &quot; on day #&quot; &amp; count" newline="True"/>
+                <input variable="wTemp[count]"/>
+                <assign variable="total" expression="total + wTemp[count]"/>
+                <assign variable="count" expression="count + 1"/>
+            </while>
+            <output expression="&quot;----------------------------------------&quot;" newline="True"/>
+            <output expression="&quot;Unsorted Temperature List for the state of &quot; &amp; state" newline="True"/>
+            <output expression="&quot;----------------------------------------&quot;" newline="True"/>
+            <comment text="set count or index back to 0"/>
+            <assign variable="count" expression="1"/>
+            <while expression="count &lt; days + 1">
+                <output expression="&quot;wTemp[&quot; &amp; count &amp; &quot;] = &quot; &amp; toFixed(wTemp[count], 2) &amp; &quot;&#176;&quot;" newline="True"/>
+                <assign variable="count" expression="count + 1"/>
+            </while>
+            <output expression="&quot;----------------------------------------&quot;" newline="True"/>
+            <output expression="&quot;----------------------------------------&quot;" newline="True"/>
+            <output expression="&quot;THE AVERAGE DAILY TEMPERATURE IN &quot; &amp; state &amp; &quot; = &quot; &amp; toFixed((total / count), 2) &amp; &quot;&#176;&quot;" newline="True"/>
+            <output expression="&quot;----------------------------------------&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

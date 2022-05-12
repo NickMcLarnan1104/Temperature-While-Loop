@@ -1,0 +1,41 @@
+Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+= RESTART: C:\Users\OWNER\Desktop\Python-Flow\mclarnan_nick_A11\mclarnan_nick_A11.py
+Enter the name of the state you are recording the temperature for [i.e. Florida, Georgia, New York]
+Florida
+How many days will you record the outdoor Temperature for the state of Florida?
+-5
+ERROR: Cannot enter a negative value, please enter a positive number.
+10g
+ERROR: Entered the wrong data type. Re-enter a positive number for this item.
+10
+What's the outdoor temperature in Florida on day #1?
+-5
+ERROR: Cannot enter a negative value, please enter a positive number.
+39g
+ERROR: Entered the wrong data type. Re-enter a positive number for this item.
+56
+What's the outdoor temperature in Florida on day #2?
+53
+What's the outdoor temperature in Florida on day #3?
+43
+What's the outdoor temperature in Florida on day #4?
+78
+What's the outdoor temperature in Florida on day #5?
+73
+What's the outdoor temperature in Florida on day #6?
+59
+What's the outdoor temperature in Florida on day #7?
+91
+What's the outdoor temperature in Florida on day #8?
+21
+What's the outdoor temperature in Florida on day #9?
+36
+What's the outdoor temperature in Florida on day #10?
+39
+[56.0, 53.0, 43.0, 78.0, 73.0, 59.0, 91.0, 21.0, 36.0, 39.0]
+[0, 56.0, 53.0, 43.0, 78.0, 73.0, 59.0, 91.0, 21.0, 36.0, 39.0]
+[0, 21.0, 36.0, 39.0, 43.0, 53.0, 56.0, 59.0, 73.0, 78.0, 91.0]
+[21.0, 36.0, 39.0, 43.0, 53.0, 56.0, 59.0, 73.0, 78.0, 91.0]
+File closes successfully.
